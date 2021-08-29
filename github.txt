@@ -1,0 +1,28 @@
+git bash 명령어 
+cd~ : 홈 디렉터리 이동
+mkdir test : 새 디렉터리 test 생성
+cd test : test디렉터리로 이동
+cd.. : 부모 디렉터리로 이동
+ps : 현재경로 출력
+ls : 디렉터리의 내용 출력
+ls -l : 디렉터리의 폴더 상세 정보 출력
+ls -a : 디렉터리의 숨김 파일과 디렉터리 출력
+rm -r test : 하위 디렉터리 test 삭제
+vim f1.txt : 빔을 사용 f1.txt 파일 작성
+cat fi.txt :  f1.txt 파일의 내용을 터미널 창에 출력
+clear : 터미널 창의 내용 삭제
+exit : 터미널 창 종료
+git config user.name 'easys' : 깃 환경 이름'easys'로 지정
+git config user.eamil 'doit@easys.co.kr' : 깃 환경에서 메일'doit@easys.co.kr'로 지정
+git init : 현재 위치에 지역 저장소 생성
+git status : 깃 상태 확인
+git add ch01.txt : ch01.txt.파일을 스테이지에 전송
+git commit -m 'ch01' : 커밋 메시지 'ch01'을 붙여 커밋
+git commit -am 'ch02' : 메시지 'ch02'를 붙여 스테이징과 커밋 동시수행
+git log : 커밋 정보 확인
+git diff : 최근 버전과 작업 폴더의 수정 파일 사이 차이 출력
+git checkout 커밋해시 : 지정한 커밋 해시로 이동
+git reset HEAD^ : 가장 최근 커밋을 취소
+git reset 커밋해시 : 지정한 커밋 해시로 이동하고 이후 커밋은 취소
+git revert 커밋해시 : 지정한 커밋 해시의 변경 이력을 취소
+
