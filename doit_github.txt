@@ -1,4 +1,5 @@
-git bash 명령어 
+do it git&github
+chater 1
 cd~ : 홈 디렉터리 이동
 mkdir test : 새 디렉터리 test 생성
 cd test : test디렉터리로 이동
@@ -12,6 +13,8 @@ vim f1.txt : 빔을 사용 f1.txt 파일 작성
 cat fi.txt :  f1.txt 파일의 내용을 터미널 창에 출력
 clear : 터미널 창의 내용 삭제
 exit : 터미널 창 종료
+
+chater 2
 git config user.name 'easys' : 깃 환경 이름'easys'로 지정
 git config user.eamil 'doit@easys.co.kr' : 깃 환경에서 메일'doit@easys.co.kr'로 지정
 git init : 현재 위치에 지역 저장소 생성
@@ -25,4 +28,18 @@ git checkout 커밋해시 : 지정한 커밋 해시로 이동
 git reset HEAD^ : 가장 최근 커밋을 취소
 git reset 커밋해시 : 지정한 커밋 해시로 이동하고 이후 커밋은 취소
 git revert 커밋해시 : 지정한 커밋 해시의 변경 이력을 취소
+
+chater 3
+git branch fixed : 브랜치 'fixed' 생성
+git checkout fixed : fixed 브랜치로 체크아웃(작업위치변경)
+git log --oneline : 커밋 로그에서 한 줄에 한 커밋씩 출력
+git add . : 수정한 전체 파일을 스테이지에 추가
+git log --branches --graph : 커밋 로그에 각 브랜치의 커밋을 그래프로 출력
+git merge fixed : fixed 브랜치를 master 브랜치에 병합
+cat edit.txt : 터미널 창에서 edit.txt 내용을 확인
+git init doit : doit 디렉터리를 만드는 동시에 지역 저장소로 만듬
+git reset c1 커밋 해시 : 현재 커밋을 다른 브랜치에 있는 c1 커밋으로 되돌림
+git branch -d fixed : 병합이 끝난 fixed 브랜치를 삭제(실제로는 숨겨짐 -> 같은 이름으로 branch 생성 시 이전 작업내용이 그대로 살아남)
+git stash 또는 stach save : 작업 트리의 수정 내용을 따로 보관해서 숨김
+git stash pop : 따로 보관했던 수정 내용을 꺼내옴
 
