@@ -1,4 +1,5 @@
 do it git&github
+
 chater 1
 cd~ : 홈 디렉터리 이동
 mkdir test : 새 디렉터리 test 생성
@@ -42,4 +43,22 @@ git reset c1 커밋 해시 : 현재 커밋을 다른 브랜치에 있는 c1 커�
 git branch -d fixed : 병합이 끝난 fixed 브랜치를 삭제(실제로는 숨겨짐 -> 같은 이름으로 branch 생성 시 이전 작업내용이 그대로 살아남)
 git stash 또는 stach save : 작업 트리의 수정 내용을 따로 보관해서 숨김
 git stash pop : 따로 보관했던 수정 내용을 꺼내옴
+
+chater 4
+git remote add origin 저장소 주소 : 원격 저장소에 연결
+git remote -v : 원격 저장소에 연결됐는지 확인
+git push -u origin master : 지역 저장소의 커밋을 맨 처음 원격 저장소로 올림
+git push : (한번 올ㄹ기 한 후에) 지역 저장소의 커밋을 원격 저장소로 올림
+git pull : 원격 저장소의 커밋을 지역 저장소로 가져옴
+ssh-keygen : ssh 키를 생성
+
+chater 5
+git clone 원격 저장소 주소 myhome : 원격 저장소를 myhome이라는 짖역 저장소로 복제
+git fetch : 원격 저장소의 커밋을 가져오기만 하고 병합하진 않음 
+git checkout FETCH_HEAD : 패치로 가져온 정보가 잇는 브랜치(FETCH_HEAD)로 이동
+git merge FETCH_HEAD : 패치로 가져온 정보가 잇는 브랜치(FETCH_HEAD)를 master브랜치에 병합
+git config user.name : 현재 깃 환경에서 사용할 이름 지정
+git config user.eamil : 현재 깃 환경에서 사용할 메일 주소 지정
+git checkout -d fixed : fixed 브랜치를 만드는 것과 동시에 체크아웃(fixed브랜치가 있으면 단순히 checkout)
+git push origin f : 원격 저장소에 f 브랜치의 커밋을 올림
 
